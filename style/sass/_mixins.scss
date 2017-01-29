@@ -1,0 +1,18 @@
+@mixin font-regular {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+}
+@mixin  font-bold {
+  font-family: "Roboto-Bold", Arial, sans-serif;
+}
+
+@mixin  font-black {
+  font-family: "Roboto-Black", Arial, sans-serif;
+}
+
+@mixin transition ($time) {
+  -webkit-transition: $time;
+  -moz-transition: $time;
+  -ms-transition: $time;
+  -o-transition: $time;
+  transition: $time;
+}

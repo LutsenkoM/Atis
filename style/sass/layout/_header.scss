@@ -1,0 +1,79 @@
+body {
+  border: 30px solid $white;
+}
+
+.content {
+  min-height: calc(100vh - 200px);
+}
+
+.wellcome-section {
+  background: url("../../images/bg-header.jpg")center no-repeat;
+  background-size: cover;
+
+   header {
+     height: 100px;
+     margin-bottom: 20vh;
+     .logo {
+       height: 30px;
+       overflow: hidden;
+     }
+     .menu-list{
+       li {
+         margin: 0 10px;
+         a {
+           @include font-bold;
+           @include transition(0.5s);
+           opacity: 0.6;
+           color: #697899;
+           font-size: 16px;
+           line-height: 82px;
+           padding: 10px;
+           border: 1px solid transparent;
+           border-radius: 20px;
+           &:hover {
+             color: $blue;
+             box-shadow: 0 0 65px rgba(1, 125, 251, 0.25);
+           }
+         }
+       }
+
+     }
+   }
+
+  .greece {
+    max-height: 135px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  p{
+    @include font-regular;
+    color: $blue;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  button {
+    @include transition(0.5s);
+    @include font-regular;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: $blue;
+    width: 187px;
+    height: 51px;
+    background-color: $white;
+    margin: 0 auto;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    &:hover {
+      box-shadow: 0 0 65px rgba(1, 125, 251, 0.25);
+      transform: scale(1.1, 1.1);
+    }
+  }
+}

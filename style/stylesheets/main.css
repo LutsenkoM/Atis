@@ -2,7 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +23,178 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/fonts/Roboto/Light/Roboto-Light.ttf") format("truetype");
+  src: url("/fonts/Roboto/Light/Roboto-Light.otf") format("opentype");
+  src: url("/fonts/Roboto/Light/Roboto-Light.woff") format("woff");
+  src: url("/fonts/Roboto/Light/Roboto-Light.eot") format("eot");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/fonts/Roboto/Bold/Roboto-Bold.ttf") format("truetype");
+  src: url("/fonts/Roboto/Bold/Roboto-Bold.otf") format("opentype");
+  src: url("/fonts/Roboto/Bold/Roboto-Bold.woff") format("woff");
+  src: url("/fonts/Roboto/Bold/Roboto-Bold.ttf") format("eot");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/fonts/Roboto/Regular/Roboto-Regular.ttf") format("truetype");
+  src: url("/fonts/Roboto/Regular/Roboto-Regular.otf") format("opentype");
+  src: url("/fonts/Roboto/Regular/Roboto-Regular.woff") format("woff");
+  src: url("/fonts/Roboto/Regular/Roboto-Regular.eot") format("eot");
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("/fonts/Roboto/Black/Roboto-Black.ttf") format("truetype");
+  src: url("/fonts/Roboto/Black/Roboto-Black.otf") format("opentype");
+  src: url("/fonts/Roboto/Black/Roboto-Black.woff") format("woff");
+  src: url("/fonts/Roboto/Black/Roboto-Black.eot") format("eot");
+}
+body {
+  border: 30px solid #fff;
+}
+
+.content {
+  min-height: calc(100vh - 200px);
+}
+
+.wellcome-section {
+  background: url("../../images/bg-header.jpg") center no-repeat;
+  background-size: cover;
+}
+.wellcome-section header {
+  height: 100px;
+  margin-bottom: 20vh;
+}
+.wellcome-section header .logo {
+  height: 30px;
+  overflow: hidden;
+}
+.wellcome-section header .menu-list li {
+  margin: 0 10px;
+}
+.wellcome-section header .menu-list li a {
+  font-family: "Roboto-Bold", Arial, sans-serif;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.6;
+  color: #697899;
+  font-size: 16px;
+  line-height: 82px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+}
+.wellcome-section header .menu-list li a:hover {
+  color: #017dfb;
+  box-shadow: 0 0 65px rgba(1, 125, 251, 0.25);
+}
+.wellcome-section .greece {
+  max-height: 135px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.wellcome-section p {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  color: #017dfb;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.wellcome-section button {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #017dfb;
+  width: 187px;
+  height: 51px;
+  background-color: #fff;
+  margin: 0 auto;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+}
+.wellcome-section button:hover {
+  box-shadow: 0 0 65px rgba(1, 125, 251, 0.25);
+  transform: scale(1.1, 1.1);
+}
+
+.item {
+  height: 100px;
+}
+
+footer {
+  height: 200px;
+}
+footer .greece {
+  max-height: 30px;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+footer p {
+  font-family: "Roboto-Regular", Arial, sans-serif;
+  color: #bdbdbd;
+  font-size: 18px;
+  text-align: center;
 }

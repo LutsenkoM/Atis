@@ -1,0 +1,15 @@
+footer {
+  height: 200px;
+  .greece {
+    max-height: 30px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  p {
+    @include font-regular;
+    color: #bdbdbd;
+    font-size: 18px;
+    text-align: center;
+  }
+}
